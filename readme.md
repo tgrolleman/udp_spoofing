@@ -8,10 +8,10 @@ Simple UDP spoofing script, input is a pcap with for example an DNS Response. Th
 `./spoof.py $parameters$` 
  
  ## Parameters
- `-f, --file | input pcapfile`
- `-c, --count | Amount of times to send the packets to the spoofed adres `
- `-i, --interval | Interval between packets, defaults to 0.1 seconds`
- `-d, --dest_ip | dest_ip to spoof the packets to`
+ `-f, --file | input pcapfile`\
+ `-c, --count | Amount of times to send the packets to the spoofed adres `\
+ `-i, --interval | Interval between packets, defaults to 0.1 seconds`\
+ `-d, --dest_ip | dest_ip to spoof the packets to`\
 
  ## Example
 `./detector.py -f test.pcap -c 5 -i 0.1 -d 127.0.0.1` 
