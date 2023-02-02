@@ -14,4 +14,9 @@ Simple UDP spoofing script, input is a pcap with for example an DNS Response. Th
  `-d, --dest_ip | dest_ip to spoof the packets to`\
 
  ## Example
+ For example, start a tcpdump to capture a DNS response:\
+`tcpdump -i any src port 53 -w test.pcap`\
+Do a DNS lookup in another terminal, to get a DNS response:\
+`dig google.nl ANY`\
+Close the tcpdump, and use the PCAP with dns response as input for spoof.py:\
 `./spoof.py -f test.pcap -c 5 -i 0.1 -d 127.0.0.1` 
